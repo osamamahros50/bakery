@@ -1,0 +1,498 @@
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;   
+
+}
+body {
+  font-family: "Alegreya", serif;
+  margin: 0;
+  padding: 0;
+}
+.position {
+  background-color: #ffffff;
+  position: fixed;
+  right: 0;
+  top: 30%;
+  width: 40px;
+  height: 85px;
+  border-radius: 3px;
+}
+.position a {
+  color: #6d6f76;
+  display: block;
+}
+.position a i {
+  font-size: 20px;
+  padding: 10px;
+}
+.position a i:hover {
+  color: #2196f3;
+}
+/* Utility */
+.container {
+  width: 90%;
+  margin: auto;
+}
+/* Start Navagatin */
+.header {
+  background: url(../images/drew-coffman-1872.jpg) center center / cover;
+  height: 100%;
+  overflow: hidden;
+}
+.navgation {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+}
+.navgation .logo {
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle;
+}
+.navgation .logo img {
+  width: 150px;
+  color: white;
+}
+.navgation .links {
+  display: inline-block;
+  width: calc(50% - 20px);
+}
+.navgation .links li {
+  display: inline-block;
+  padding-left: 10px;
+ 
+  font-weight: 600;
+}
+.navgation .links li a {
+  text-decoration: none;
+  color: #333;
+}
+.navgation .links li a:hover {
+  color: #8e7754;
+}
+.navgation .links .links-item {
+  border-top: 3px solid #8e7754;
+  padding: 14px 20px;
+}
+/* End Navagation */
+/* Start Home */
+
+/* #home{
+  height: 100vh;
+} */
+
+#home .content {
+  margin-top: 200px;
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+}
+
+#home .content p {
+  font-size: 20px;
+  line-height: 1.7;
+  font-weight: 500;
+}
+#home .content h1 {
+  font-size: 70px;
+  font-weight: 500;
+}
+#home .content .btn1 {
+  padding: 15px 20px;
+  border: 1px solid #8e7754;
+  border-radius: 5px;
+  background-color: #8e7754;
+  color: #fff;
+  margin-right: 10px;
+}
+#home .content .btn1:hover {
+  background-color: #fff;
+  color: #000;
+}
+#home .content .btn2 {
+  padding: 15px 20px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+}
+#home .content .btn2:hover {
+  background-color: #fff;
+  color: #000;
+}
+.content .border {
+  width: 30px;
+  height: 50px;
+  border: 1px solid #fff;
+  margin: auto;
+  border-radius: 30px;
+  margin-top: 80px;
+  position: relative;
+  
+}
+.content .border::after{
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 40%;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #fff;
+  animation-name: ifint;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+@keyframes ifint {
+  0%{
+    top: 0px;
+    opacity: 1;
+  }
+  50%{
+    top: 50%;
+  }
+  100%{
+    top: 10px;
+    opacity: 0;
+  }
+}
+
+/* End Home */
+/* Start about */
+#about {
+  margin: 50px 0;
+  overflow: hidden;
+}
+#about .about-info {
+  padding: 20px;
+}
+#about .about-info .img {
+  display: inline-block;
+  width: 50%;
+}
+#about .about-info .img img {
+  width: 100%;
+  max-width: 90%;
+  vertical-align: middle;
+}
+#about .about-info .descripe {
+  display: inline-block;
+  width: calc(50% - 60px);
+  vertical-align: top;
+  padding: 15px;
+}
+.descripe h2 {
+  color: #303030;
+  font-size: 25px;
+  font-weight: 500;
+}
+.descripe p {
+  color: #6d6f76;
+}
+
+.descripe img {
+  width: 50px;
+}
+.descripe .des-info {
+  padding: 10px 0;
+  color: #303030;
+}
+.descripe .des-info .logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+.descripe .des-info .info {
+  display: inline-block;
+}
+/* End about */
+/* Start Offer */
+#Our-Offer {
+  background-color: #f8f8f8;
+  margin: 50px 0;
+}
+#Our-Offer .descripe {
+  padding: 70px;
+}
+#Our-Offer .descripe .des-info {
+  display: inline-block;
+  width: calc(50% - 100px);
+  vertical-align: top;
+  padding: 50px 0;
+}
+#Our-Offer .descripe .des-info h2 {
+  color: #303030;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: 500;
+}
+#Our-Offer .descripe .des-info p {
+  color: #6d6f76;
+  line-height: 2;
+  font-size: 15px;
+}
+#Our-Offer .descripe .des-img {
+  display: inline-block;
+  width: 50%;
+}
+#Our-Offer .descripe .des-img img {
+  width: 100%;
+  margin-left: 70px;
+}
+/* End Offer */
+/* start Galllery */
+#Gallery {
+  padding: 30px;
+}
+#Gallery .gallery-title {
+  text-align: center;
+}
+#Gallery .gallery-title h3 {
+  color: #303030;
+  font-size: 28px;
+  font-weight: 500;
+}
+#Gallery .gallery-title p {
+  color: #6d6f76;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+#Gallery .gallery-info {
+  float: left;
+  width: calc(33.3% - 30px);
+  text-align: center;
+  padding: 0 15px;
+}
+#Gallery .gallery-info img {
+  width: 100%;
+}
+#Gallery .gallery-info h3 {
+  color: #303030;
+  font-weight: 500;
+  font-size: 20px;
+}
+#Gallery .gallery-info p {
+  line-height: 1.6;
+  font-size: 18px;
+  color: #6d6f76;
+}
+.clr {
+  clear: both;
+}
+/* End Galllery */
+/* Start Blog */
+#Blog {
+  background-color: #f8f8f8;
+  padding: 70px;
+  overflow: hidden;
+  color: #6d6f76;
+}
+#Blog .Blog-info {
+  float: left;
+  width: 50%;
+}
+#Blog .Blog-ifram {
+  float: left;
+  width: calc(50% - 50px);
+  margin-left: 50px;
+}
+#Blog .Blog-info h2 {
+  color: #303030;
+  font-size: 30px;
+  font-weight: 600;
+}
+#Blog .Blog-info p {
+  font-size: 17px;
+  line-height: 1.9;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+#Blog .Blog-info h5 {
+  font-size: 17px;
+  font-weight: 500;
+}
+#Blog .Blog-info .Blog-contact img {
+  width: 40px;
+  background-color: #8e7754;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 50%;
+}
+#Blog .Blog-info .Blog-contact p {
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 10px;
+  vertical-align: top;
+  width: 70%;
+}
+.clr {
+  clear: both;
+}
+/* End Blog */
+/* Start Contact */
+#contact {
+  background: url(../images/contact-details-map.png) center center/contain
+    no-repeat;
+  background-color: #2e1e1e;
+  overflow: hidden;
+  padding: 50px;
+}
+#contact .contact-info {
+  float: left;
+  width: calc(25% - 30px);
+  padding: 0 15px;
+}
+#contact .contact-info h2 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+#contact .contact-info .contact-item p {
+  color: #969696;
+  font-size: 16px;
+  line-height: 1.9;
+  font-weight: 400;
+  padding: 10px 0;
+}
+#contact .contact-info .contact-items {
+  border-bottom: 1px solid #434343;
+}
+#contact .contact-info .contact-items img {
+  display: inline-block;
+  width: 20px;
+  vertical-align: middle;
+  margin-top: 10px;
+}
+#contact .contact-info .contact-items p {
+  display: inline-block;
+  color: #969696;
+  vertical-align: middle;
+  width: 70%;
+}
+#contact .contact-info .none {
+  border: none;
+}
+#contact .contact-info .contact-items .img {
+  width: 45px;
+
+  padding: 15px 0;
+}
+#contact .contact-info .contact-items .info a {
+  color: #969696;
+  text-decoration: none;
+}
+#contact .contact-info .contact-items .info {
+  padding: 10px 0;
+}
+/* End Contact */
+/* Start Footer */
+.footer {
+  background-color: #353330;
+  padding: 70px 0;
+  text-align: center;
+}
+.footer p {
+  color: #6d6f76;
+  margin-bottom: 20px;
+}
+.footer .img-logo {
+  width: 45px;
+  background-color: #6d6f76;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+.footer .img-logo:hover {
+  background-color: #2196f3;
+}
+.footer .red:hover {
+  background-color: #f44336;
+}
+/* End Footer */
+@media (max-width:1000px) {
+  .navgation .logo{
+    display: block;
+    text-align: center;
+    width: 100%;
+    
+  }
+  .navgation .links{
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  }
+  #home .content h1 {
+    font-size: 50px;
+    font-weight: 500;
+  }
+  #home .content p {
+    font-size: 18px;
+    line-height: 1.7;
+    font-weight: 500;
+  }
+  #about .about-info .img {
+    display: block;
+    width: 100%;
+  }
+  #about .about-info .descripe {
+    display: block;
+    width: 100%;
+
+  }
+  #about .about-info .img img {
+  width: 100%;
+  margin: auto;
+
+}
+  #Our-Offer .descripe .des-info {
+    display: block;
+   width: 100%;
+  }
+  #Our-Offer .descripe .des-img {
+    display: block;
+    width: 100%;
+  }
+  #Our-Offer .descripe .des-img img {
+    width: 100%;
+    margin: auto;
+  }
+  #Gallery .gallery-info p {
+    line-height: 1.6;
+    font-size: 14px;
+    color: #6d6f76;
+  }
+  #Blog .Blog-info {
+   display: block;
+    width: 100%;
+  }
+  #Blog .Blog-ifram {
+   display: block;
+   margin: auto;
+  
+  
+  }
+  #contact .contact-info h2 {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  #contact .contact-info {
+    float: left;
+    width: 100%;
+    padding: 0 10px;
+  }
+  #Gallery .gallery-info{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    
+  }
+}
